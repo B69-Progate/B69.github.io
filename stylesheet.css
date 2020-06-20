@@ -10,25 +10,3 @@ body {
 a {
   text-decoration: none;
 }
-
-.clear {
-  clear: left;
-}
-
-.container {
-  
-}
-
-footer img {
-  width: 125px;
-}
-
-footer p {
-  color: #b3aeb5;
-  font-size: 12px;
-}
-
-footer {
-  padding-top: 30px;
-  padding-bottom: 20px;
-}
