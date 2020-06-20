@@ -1,0 +1,58 @@
+li {
+		list-style: none;
+	}
+.container {
+	  width: 1172px;
+	  height: 220px;
+	  background-image: url(img/spbg.jpg);
+	  background-size: cover;
+	  }
+	  
+.kelompok {
+  width: 100%;
+  height: 50px;
+  font-weight: bold;
+  background-color: burlywood;
+  color: white;
+  text-align: center;
+  opacity: 0.7;
+  text-shadow: 2px 2px 4px #000000;
+  box-shadow: 0 2px grey;
+}
+
+.kelompok h2 {
+	padding-top: 10px;
+}
+
+.nama {
+	width: 100%;
+	height: 80px;
+	margin: 0 auto;
+}
+
+.nama li {
+	font-size: 18px;
+	padding-bottom: 15px;
+	font-weight: bold;
+	color: white;
+	
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.support {
+float: right;
+display: block;
+
+}
+
+.support li {
+float: right;
+margin-right: 50px;
+}
+
+.support p {
+	margin-left: 35px;
+font-size: 15px;
+color: red;
+text-shadow: 2px 2px 4px black;
+}
