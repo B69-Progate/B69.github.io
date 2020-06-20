@@ -1,10 +1,10 @@
 li {
 		list-style: none;
 	}
-.container {
+  .container-f {
 	  width: 1172px;
 	  height: 220px;
-	  background-image: url(https://user-images.githubusercontent.com/67105615/85192865-59fdfe80-b2ee-11ea-8202-129f0fb8b44d.jpg);
+	  background-image: url(img/spbg.jpg);
 	  background-size: cover;
 	  }
 	  
@@ -43,6 +43,7 @@ li {
 float: right;
 display: block;
 
+
 }
 
 .support li {
@@ -51,8 +52,25 @@ margin-right: 50px;
 }
 
 .support p {
-	margin-left: 35px;
+
 font-size: 15px;
 color: red;
 text-shadow: 2px 2px 4px black;
+}
+
+.container-f:hover {
+  
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+  
+}
+
+.container-f:hover h2 {
+	animation: hinge; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+  
+}
+footer img {
+  width: 100px;
+  margin-right: 40px;
 }
