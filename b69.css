@@ -275,16 +275,40 @@ flex-wrap: wrap;
   color: black;
 
 }
-@media all and (max-width: 1000px) {
 
-.txt-contents {
-display: none;
-  }
-  
+@media all and (max-width: 1800px) {
+
+
   .popular-item p{
 	  padding-left: 10px;
 	  text-align: left;
 	  font-size: 10px;
+  }
+  
+  .popular {
+	  width: 50%;
+	  display: block;
+  }
+  
+  
+  
+  footer {
+	  margin-top: 420px;
+  }
+}
+
+@media all and (max-width: 1200px) {
+
+
+  .popular-item p{
+	  padding-left: 10px;
+	  text-align: left;
+	  font-size: 10px;
+  }
+  
+  .popular {
+	  width: 50%;
+	  display: block;
   }
   
   .city-info{
@@ -302,5 +326,54 @@ display: none;
   
   .city-info a{
     font-size: 8px;
+  }
+  
+  footer {
+	  margin-top: 420px;
+  }
+}
+
+
+@media all and (max-width: 700px) {
+
+
+  .popular-item p{
+	  padding-left: 10px;
+	  text-align: left;
+	  font-size: 10px;
+  }
+  
+  .popular {
+	  width: 100%;
+  }
+  
+  .city-info{
+	  opacity: 1;
+	  bottom: 60px;
+  }
+  
+  .city-info p{
+    font-size: 10px;
+  }
+  
+  .city-info h2{
+    font-size: 15px;
+  }
+  
+  .city-info a{
+    font-size: 8px;
+  }
+  
+  .ttg a {
+	  font-size: 15px;
+  }
+  
+  .nama li {
+	  font-size: 15px;
+  }
+  
+	  
+  footer {
+	  margin-top: 850px;
   }
 }
