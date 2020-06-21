@@ -1,11 +1,15 @@
 li {
 		list-style: none;
-	}
+	}	
+	
   .container-f {
-	  width: 1172px;
+	  
+	  width: 100%;
 	  height: 220px;
-	  background-image: url(https://user-images.githubusercontent.com/67105615/85192865-59fdfe80-b2ee-11ea-8202-129f0fb8b44d.jpg);
+	  
+	  background-image: url(img/spbg.jpg);
 	  background-size: cover;
+	  margin: 0 auto;
 	  }
 	  
 .kelompok {
@@ -25,9 +29,9 @@ li {
 }
 
 .nama {
-	width: 100%;
-	height: 80px;
-	margin: 0 auto;
+	
+	padding-top: 15px;
+	
 }
 
 .nama li {
@@ -39,23 +43,40 @@ li {
   text-shadow: 2px 2px 4px #000000;
 }
 
+.ttg {
+	
+	padding-top: 15px;
+	
+}
+
+.ttg p {
+	padding-bottom: 30px;
+}
+
+.ttg a {
+	font-size: 18px;
+	
+	font-weight: bold;
+	color: white;
+	
+  text-shadow: 2px 2px 4px #000000;
+}
+
+
 .support {
-float: right;
+margin-top: 50px;
 display: block;
 
-
 }
 
-.support li {
-float: right;
-margin-right: 50px;
-}
+
 
 .support p {
 
 font-size: 15px;
 color: red;
 text-shadow: 2px 2px 4px black;
+padding-bottom: 10px;
 }
 
 .container-f:hover {
@@ -70,7 +91,24 @@ text-shadow: 2px 2px 4px black;
   animation-duration: 2s; /* don't forget to set a duration! */
   
 }
+
+.container-f:hover li {
+	animation: fadeOut; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+  
+}
+
 footer img {
   width: 100px;
-  margin-right: 40px;
+  
+}
+
+.abouts {
+	float: left;
+	width: 33%;
+}
+
+.about {
+	position: relative;
+	text-align: center;
 }
