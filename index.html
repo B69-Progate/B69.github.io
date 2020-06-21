@@ -1,38 +1,366 @@
 <!DOCTYPE html>
 <html>
-  <head>
+   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	  <link rel="stylesheet" href="cipto.css">  
-     <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <title>Progate</title>
+    
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+	
   </head>
+  <style>
+  * {
+  box-sizing: border-box;
+}
+
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lucida Grande";
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+		list-style: none;
+	}	
+	
+  .container-f {
+	  
+	  width: 100%;
+	  height: 220px;
+	  
+	  background-image: url(img/spbg.jpg);
+	  background-size: cover;
+	  margin: 0 auto;
+	  }
+	  
+.kelompok {
+  width: 100%;
+  height: 50px;
+  font-weight: bold;
+  background-color: burlywood;
+  color: white;
+  text-align: center;
+  opacity: 0.7;
+  text-shadow: 2px 2px 4px #000000;
+  box-shadow: 0 2px grey;
+}
+
+.kelompok h2 {
+	padding-top: 10px;
+}
+
+.nama {
+	
+	padding-top: 15px;
+	
+}
+
+.nama li {
+	font-size: 18px;
+	padding-bottom: 15px;
+	font-weight: bold;
+	color: white;
+	
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.ttg {
+	
+	padding-top: 15px;
+	
+}
+
+.ttg p {
+	padding-bottom: 30px;
+}
+
+.ttg a {
+	font-size: 18px;
+	
+	font-weight: bold;
+	color: white;
+	
+  text-shadow: 2px 2px 4px #000000;
+}
+
+
+.support {
+margin-top: 50px;
+display: block;
+
+}
+
+
+
+.support p {
+
+font-size: 15px;
+color: red;
+text-shadow: 2px 2px 4px black;
+padding-bottom: 10px;
+}
+
+.container-f:hover {
   
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+  
+}
+
+.container-f:hover h2 {
+	animation: hinge; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+  
+}
+
+.container-f:hover li {
+	animation: fadeOut; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+  
+}
+
+footer img {
+  width: 100px;
+  
+}
+
+.abouts {
+	float: left;
+	width: 33%;
+}
+
+.about {
+	position: relative;
+	text-align: center;
+}
+
+
+.paket {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  border-top: 5px solid #fec73b;
+}
+
+.paket h1 {
+  font-weight: normal;
+  text-align: center;
+  opacity: 0.7;
+  font-size: 30px;
+  letter-spacing: 3px;
+  }
+.section{
+    height: 80vh;
+    display: flex;
+    border-bottom: 5px solid #fec73b;
+}
+.city{
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    transition: .6s;
+}
+
+.city:hover{
+    flex: 3;
+}
+
+.city-pic{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: grayscale(80%);
+    transition: .3s;
+}
+
+.city:hover .city-pic{
+    filter: grayscale(0);
+}
+
+.city-info{
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    transition: .2s;
+}
+
+.city:hover .city-info{
+    opacity: 1;
+    bottom: 60px;
+    transition-delay: .6s;
+}
+
+.city-info h2{
+    font-size: 80px;
+    font-weight: bold;
+    font-style: "Arial Black"; 
+    color: #fff;
+    margin-bottom: 70px
+}
+
+.city-info p{
+    display: inline-block;
+    padding: 10px 14px;
+    color: #fff;
+    background-color: #080b05;
+    opacity: 0.8;
+    text-align: center;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    transition: .3s linear;
+}  
+.loct a{
+    display: inline-block;
+    padding: 18px 10px;
+    color: #333;
+    background-color: #55acee;
+    line-height: 0px;
+    opacity: 0.8;
+    text-align: center;
+    border-radius: 4px;
+    margin: 0 6px;
+    font-size: 18px;
+    transition: .3s linear;
+}
+</style>
+
   <body>
-    
-<footer>
-  <div class="container-f">
+  
+        <div class="paket">
+           <h1>PAKET LIBURAN</h1>    
+        </div>
+    <div class="section" id="our">
+        <div class="city">
+            <img src="img/raja.jpg" alt="" class="city-pic">
+            <div class="city-info">
+                <h2>RAJA AMPAT</h2>
+                <p>Rp 6.000.000/orang</p>
+                <div class="loct">
+                    <a href="#">Kabui Bay</a>
+                    <a href="#">Pianemo</a>
+                    <a href="#">Dive Lodge</a>
+                    <a href="#">Yenbuba</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="city">
+            <img src="img/bali.jpg" alt="" class="city-pic">
+            <div class="city-info">
+                <h2>BALI</h2>
+                <p>Rp 3.000.000/orang</p>
+                <div class="loct">
+                    <a href="#">Nusa Penida</a>
+                    <a href="#">Bedugul</a>
+                    <a href="#">Ubud</a>
+                    <a href="#">Tanah Lot</a>
+                    <a href="#">Nusa Dua</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="city">
+            <img src="img/bromo.jpg" alt="" class="city-pic">
+            <div class="city-info">
+                <h2>MALANG</h2>
+                <p>Rp 1.000.000/orang</p>
+                <div class="loct">
+                    <a href="#">Gunung Bromo</a>
+                    <a href="#">JTP 2</a>
+                    <a href="#">Coban Rais</a>
+                    <a href="#">Museum Angkut</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="city">
+            <img src="img/jogja.jpg" alt="" class="city-pic">
+            <div class="city-info">
+                <h2>JOGJA</h2>
+                <p>Rp 500.000/orang</p>
+                <div class="loct">
+                    <a href="#">Candi Borobudur</a>
+                    <a href="#">Kraton Jogja</a>
+                    <a href="#">Malioboro</a>
+                    <a href="#">Pusat oleh-oleh</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="city">
+            <img src="img/bunaken.jpg" alt="" class="city-pic">
+            <div class="city-info">
+                <h2>MANADO</h2>
+                <p>Rp 2.500.000/orang</p>
+                <div class="loct">
+                    <a href="#">Bunaken</a>
+                    <a href="#">Monumen "Yesus"</a>
+                    <a href="#">Pagoda Ekayana</a>
+                    <a href="#">Kota Bunga</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<footer>
+    <div class="container-f">
       <div class="kelompok">
         <h2>GROUP - B69:</h2>
+		</div>
+	  <div class="abouts">
+	  
+	  <div class="about ttg">
+        <ul>
+          <p><a href="#">Tentang Kami</a></p>
+          <p><a href="#">Cek Promo</a></p>
+          <p><a href="#">link Website</a></p>
+          
+        </ul>
+	
       </div>
-      <div class="nama">
+	  </div>
+	  
+	  <div class="abouts">
+	  <div class="about nama">
         <ul>
           <li class="animate__animated animate__zoomInDown">Annisa Miftahul</li>
           <li class="animate__animated animate__zoomInDown animate__delay-1s">Ciptono Setia Budi</li>
           <li class="animate__animated animate__zoomInDown animate__delay-2s">Arif Rahman Naufal</li>
-          <li class="animate__animated animate__zoomInDown animate__delay-3s">Azka Naili H</li>		  
+          <li class="animate__animated animate__zoomInDown animate__delay-3s">Azkan</li>		  
         </ul>
+	
       </div>
-	  <div class="support">		
+	  </div>
+	  <div class="abouts">
+	  <div class="about support">		
 		<p>Supported by:</p>
 		<img src="https://prog-8.com/images/html/advanced/footer_logo.png">
-	  </div>	  
+		</div>
+		
+	  </div>
+	  </div>
     </div>
   </footer>
-  
-    
   </body>
   
 </html>
