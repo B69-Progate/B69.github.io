@@ -1,10 +1,14 @@
-@media all and (max-width: 1000px) {
-.popular{
-width: 50%;
-    margin-bottom: 50px;
-}
-.heading h2 {
-    font-size: 20px;
+@media all and (max-width: 1800px) {
+
+  .popular-item p{
+	  padding-left: 10px;
+	  text-align: center;
+	  font-size: 10px;
+  }
+  
+  .popular {
+	  width: 50%;
+	  display: block;
   }
 
     
