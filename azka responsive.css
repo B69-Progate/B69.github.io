@@ -6,3 +6,14 @@ width: 50%;
 .heading h2 {
     font-size: 20px;
   }
+
+    
+    .popular-item p{
+	  padding-left: 10px;
+	  text-align: center;
+	  font-size: 10px;
+  }
+  
+  .popular {
+	  width: 100%;
+  }
