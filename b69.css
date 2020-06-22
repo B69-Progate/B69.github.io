@@ -163,9 +163,11 @@ footer img {
   
 .section{
     height: 600px;
-    width: 500px;
     display: flex;
     border-bottom: 5px solid #fec73b;
+}
+.city img{
+ width: 500px;
 }
 .city{
     flex: 0.5;
