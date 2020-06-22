@@ -1,58 +1,69 @@
-/* Untuk Tablet */
-@media all and (max-width: 1000px) {
-  .lesson {
-    width: 50%;
-    margin-bottom: 50px;
-  }
+/* Untuk Tablets */
+
+/* Tambahkan breakpoint max-width: 1000px */
+@media (max-width: 1000px) {
   
-  .top-wrapper h1 {
-    font-size: 32px;
+  .paket {
+    padding: 20px 0;
   }
-  
-  .heading h2 {
-    font-size: 20px;
+  .paket h1{
+    font-size: 30px;
+  }
+  .section{
+    height: 70vh;
+  }
+  .city-info h2{
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  .city-info p{
+    font-size: 15px;
+  }
+  .city img{
+    width: 70vh;
+    height: 70vh;
+  }
+  .loct a{
+    text-align:left;
+    width: 60%;
+    margin-bottom: 2px;
+    font-size: 70%;
+    padding: 10px 6px;
   }
 }
 
-/* Untuk Smartphone */
+
+/* Tambahkan breakpoint max-width: 670px */
+
 @media all and (max-width: 670px) {
-  .lesson {
-    width: 100%;
+  .paket {
+    padding: 6px 0;
+   
   }
-  
-  footer {
-    text-align: center;
+  .paket h1{
+    font-size: 15px;
+    margin-top: 5px;
   }
-  
-  .btn {
-    width: 100%;
+  .section{
+    height: 50vh;
   }
-  
-  .facebook {
-    margin-bottom: 10px;
+  .city-info h2{
+    font-size: 15px;
+    margin-bottom: 15px;
   }
-  
-  .top-wrapper {
-    text-align: left;
+  .city-info p{
+    font-size: 8px;
+    padding: 4px 3px;
   }
-  
-  /* Tambahkan CSS untuk header-right */
-  .header-right{
-    display: none;
+  .city img{
+    width: 50vh;
+    height: 50vh;
   }
-  
-  /* Tambahkan CSS untuk menu-icon */
-  .menu-icon{
-    display: block;
-  }
-  
-  .top-wrapper h1 {
-    font-size: 24px;
-    line-height: 36px;
-  }
-  
-  .top-wrapper p {
-    font-size: 14px;
-    line-height: 20px;
+  .loct a{
+    text-align:left;
+    width: 50%;
+    margin-bottom: 2px;
+    font-size: 50%;
+    padding: 5px 4px;
   }
 }
