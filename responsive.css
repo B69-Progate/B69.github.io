@@ -10,7 +10,7 @@
     font-size: 30px;
   }
   .section{
-    height: 70vh;
+    height: 60vh;
   }
   .city-info h2{
     font-size: 28px;
@@ -20,8 +20,8 @@
     font-size: 15px;
   }
   .city img{
-    width: 70vh;
-    height: 70vh;
+    width: 60vh;
+    height: 60vh;
   }
   .loct a{
     text-align:left;
