@@ -162,7 +162,7 @@ footer img {
   }
   
 .section{
-    height: 700px;
+    height: 600px;
     display: flex;
     border-bottom: 5px solid #fec73b;
 }
@@ -228,7 +228,7 @@ footer img {
 }  
 .loct a{
     display: inline-block;
-    padding: 18px 10px;
+    padding: 14px 9px;
     color: #333;
     background-color: #55acee;
     line-height: 0px;
@@ -236,7 +236,7 @@ footer img {
     text-align: center;
     border-radius: 4px;
     margin: 0 2px;
-    font-size: 15px;
+    font-size: 13px;
     transition: .3s linear;
 }
 
