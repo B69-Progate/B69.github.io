@@ -227,7 +227,7 @@ footer img {
 }  
 .loct a{
     display: inline-block;
-    padding: 14px 9px;
+    padding: 12px 7px;
     color: #333;
     background-color: #55acee;
     line-height: 0px;
@@ -235,7 +235,7 @@ footer img {
     text-align: center;
     border-radius: 4px;
     margin: 0 2px;
-    font-size: 13px;
+    font-size: 12px;
     transition: .3s linear;
 }
 
